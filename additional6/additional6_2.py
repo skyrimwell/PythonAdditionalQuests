@@ -2,12 +2,12 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as mat_plt
 
-image = cv2.imread('./ex.jpg')
+image = cv2.imread('./img.jpg')
 mat_plt.figure()
 mat_plt.imshow(image, vmin=0, vmax=255, cmap=mat_plt.get_cmap('Greys'))
 mat_plt.title('Original image')
 
-image = cv2.imread('./ex.jpg', cv2.IMREAD_GRAYSCALE)
+image = cv2.imread('./img.jpg', cv2.IMREAD_GRAYSCALE)
 image = 255 - image
 height, width = image.shape
 # Сжатие в 2 раза
